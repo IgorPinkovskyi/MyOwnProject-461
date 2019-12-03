@@ -5,6 +5,12 @@ body {
     margin: auto;
 }
 
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -35,12 +41,23 @@ body {
  }
 
  .menu {
-     background-color: #0844a4;
      align-items: center;
+     margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
  }
+
+li {
+display: inline-block;
+background-color: #0844a4;
+padding: 10px;
+}
+
  a {
      color: white;
      font-size: 2rem;
+     padding: 10px;
+
  }
 
  h2+ p {
@@ -53,4 +70,8 @@ font-family: Times 'Times New Roman', Times, serif;
  
  section {
      display: flex;
+ }
+
+ li .active {
+     background-color: #2196f3;
  }

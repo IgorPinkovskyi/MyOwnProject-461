@@ -4,4 +4,53 @@ body {
     width: 980px;
     margin: auto;
 }
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.header-logo {
+    font-family: "Asset";
+    font-size: 2rem;
+    color: #0844a4;
+    margin-bottom: 1px;
+}
+
+.under-logo {
+    font-family: "Kaushan Script";
+    color: #0844a4;
+    margin-top: 5px;
+    }
  
+ header nav .menu a {
+     text-decoration: none;
+ }
+
+ header nav .menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+ }
+
+ .menu {
+     background-color: #0844a4;
+     align-items: center;
+ }
+ a {
+     color: white;
+     font-size: 2rem;
+ }
+
+ h2+ p {
+font-family: Times 'Times New Roman', Times, serif;
+ }
+ .page {
+    background: rgb(82,144,242);
+    background: linear-gradient(45deg, rgba(82,144,242,1) 0%, rgba(217,215,242,1) 0%, rgba(100,164,177,1) 100%);
+ }
+ 
+ section {
+     display: flex;
+ }

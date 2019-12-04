@@ -14,7 +14,7 @@ header nav .menu {
   padding: 0;
   list-style: none;
   margin-right: 50px;
-  justify-content: space-around;
+  margin-left: 50px;
 }
 
 header .menu {
@@ -37,6 +37,12 @@ text-shadow: 5px 5px 10px #2196f3;
   header nav {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+.solar, .wind {
+      flex-direction: column;
   }
 }
 
@@ -69,6 +75,11 @@ ul {
     align-items: center;
 }
 
+li, a {
+    width: 20%;
+    padding: 5px;
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -87,4 +98,11 @@ article {
 }
 img {
     margin-top: 10px;
+}
+
+h2, h3 {
+    font-family: "Kaushan Script";
+    font-size: 2rem;
+    color: #0844a4;
+    text-align: center;
 }

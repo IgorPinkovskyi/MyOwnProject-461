@@ -30,7 +30,7 @@ header nav .menu a {
 }
 
 header nav .menu li:hover {
-text-shadow: 2px 2px 5px #2196f3;
+text-shadow: 5px 5px 10px #2196f3;
 }
 
 @media (min-width: 600px) {
@@ -67,4 +67,24 @@ text-shadow: 2px 2px 5px #2196f3;
 ul {
     background-color: #0844a4;
     align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.solar, .wind {
+    display: flex;
+}
+
+.solar-content, .wind-content {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+img {
+    margin-top: 10px;
 }

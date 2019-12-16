@@ -4,9 +4,19 @@
   --main-color: black;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
   max-width: 980px;
   margin: auto;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #0844a4;   
 }
 
 header nav .menu {

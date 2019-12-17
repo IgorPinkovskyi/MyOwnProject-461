@@ -110,19 +110,31 @@
 
 		</section>
 							<h3>Choose Alternative Save a Planet</h3>
-							<section class="contact">
-								<h2>Contact us</h2>
-								<form action="" method="POST" name="test" id="form">
-									<label for="name">Name:</label>
-									<input type="text" name="name" id="name" placeholder="Name" id="name"><br>
-									<label for="email">Email address:</label>
-									<input type="email" name="email" id="email" placeholder="@mail" id="email"><br>
-									<label for="message">Message:</label>
-									<textarea name="message" id="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
-									<input type="button" onclick="valid(document.getElementById('form'))" value="SEND">
+							<section>
+                                <h2>Contact Us</h2>
+								<form class="login-form">
+									<label>
+                                    Name: <input type="text" name="name" placeholder="Name">
+                                    </label>
+									<br>
+									
+                                    <label>
+                                    Email address: <input type="email" name="email" placeholder="@mail">
+                                    </label>
+                                    <br>
+                                    
+                                   <label>
+                                    Message: <textarea name="message" placeholder="Your message"></textarea>
+                                    </label>
+									<br>
+									<input type="submit" value="SEND">
+                                    </form>
+							</section>
+
     </form>
 									<div id="call-back"><img src="img/phone.png" alt="phone"></div>
 							</section>
+							
 							<footer>
 								<div id="map">
 									<iframe

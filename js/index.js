@@ -1,11 +1,18 @@
-function valid(form) {
-  let fail = false;
-  const name = form.name.value;
-  const email = form.email.value;
-    if (name === "" || name === " ")
-        fail = "Enter Your name";
-    else if (email === "" || email === " ")
-        fail = "Enter Your @mail";
-
-  if (fail) alert(fail);
+document.querySelector('.login-form input[type=submit]')
+    .addEventListener('click', login);
+function login(e) {
+    e.preventDefault();
+    fetch('login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify({
+            name: document.querySelector('.login-form input[name=name]').value,
+            email: document.querySelector('.login-form input[name=email]').value,
+            message: document.querySelector('.login-form textarea[name=message]').value
+        })
+    })
+    .then(_ => document.querySelector('.login-form').reset());
 }

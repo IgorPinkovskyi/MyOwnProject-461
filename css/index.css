@@ -13,6 +13,21 @@ body {
   margin: auto;
 }
 
+nav {
+background: rgb(82,144,242);
+background: linear-gradient(45deg, rgba(82,144,242,1) 0%, rgba(217,215,242,1) 0%, rgba(100,164,177,1) 100%);!important;  
+}
+
+.yourElement {
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+h3 {
+    margin: 30px;
+}
+
 #map {
     display: flex;
     justify-content: center;

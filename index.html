@@ -146,27 +146,32 @@
                 </div>
 		</section>
 			<h3 class="animated infinite pulse delay-2s">Choose Alternative Save a Planet</h3>
-			<section class="contact">
-                <h2>Contact Us</h2>
-				<form id="login-form">
-					<label>
-                        Name: <input type="text" name="name" placeholder="Name">
+			<h2>Contact Us</h2>
+		<div class="contact">
+            <div class="form-ordinery">
+			<form role="form" id="login-form">
+                <div class="form-group">
+				    <label>Name:
+                        <input type="text" name="name" class="form-control" placeholder="Name" required>
                     </label>
-					<br>
-									
-                    <label>
-                    Email address: <input type="email" name="email" placeholder="@mail">
+				</div>
+                <div class="form-group">
+				    <label>Email address:
+                        <input type="email" name="email" class="form-control" placeholder="@mail" required>
+                     </label>
+				</div>
+                <div class="form-group">
+				    <label>Message:
+                        <textarea name="message" class="form-control" placeholder="Your message"></textarea>
                     </label>
-                    <br>
-                                    
-                    <label>
-                        Message: <textarea name="message" placeholder="Your message"></textarea>
-                    </label>
-					<br>
-					<input type="submit" value="SEND">
-                </form>
-			</section>
-			<button class="btn btn-info" data-toggle="modal" data-target="#modal-call-back">Call back</button>
+				</div>
+                <div class="form-group">
+				<button type="submit" class="btn btn-info">SEND</button>
+                </div>
+            </form>
+            </div>
+		<div class="phone-call">
+		<button class="btn btn-info" id="btn-phone-call" data-toggle="modal" data-target="#modal-call-back">Call back</button>
         <div id="modal-call-back" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -200,7 +205,8 @@
                     </div>
                 </div>
             </div>
-        
+            </div>
+          </div>
         </div>
 							
 		<footer>

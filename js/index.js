@@ -1,4 +1,4 @@
-document.querySelector('#login-form input[type=submit]')
+document.querySelector('#login-form button[type=submit]')
     .addEventListener('click', login);
 function login(e) {
     e.preventDefault();

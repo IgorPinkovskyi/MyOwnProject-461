@@ -8,49 +8,50 @@
 	<title>Contact</title>
 	<link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 	<div class="page">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">
-    <h1 class="header-logo">ASE</h1>
-	<p class="under-logo">Alternative source of energy</p>
-  </a>
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="header-logo">ASE</h1>
+	                <p class="under-logo">Alternative source of energy</p>
+                </a>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="products.html">Products</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="shopping-cart.html"><img src="img/cart.png" alt="shopping cart" height="30"></a>
-      </li>
-    </ul
-  </div>
-</nav>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping-cart.html"><img src="img/cart.png" alt="shopping cart" height="30"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 		</header>
 		<section class="contact">
 			<h2>Contact Us</h2>
 			<form class="login-form">
 				<label>
-                    Name: <input type="text" name="name" placeholder="Name">
+                    Name: <input type="text" name="name" placeholder="Name" required>
                 </label>
 				<br>
 
 				<label>
-                    Email address: <input type="email" name="email" placeholder="@mail">
+                    Email address: <input type="email" name="email" placeholder="@mail" required>
                 </label>
 				<br>
 
@@ -61,12 +62,46 @@
 				<input type="submit" value="SEND">
             </form>
 		</section>
-		<div id="call-back"><img src="img/phone.png" alt="phone"></div>
+		<button class="btn btn-info" data-toggle="modal" data-target="#modal-call-back">Call back</button>
+        <div id="modal-call-back" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title">We will call you soon</h4>
+                    <button class="close" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name-call-back">Name:</label>
+                                <input type="text" class="form-control" id="name-call-back" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel-call-back">Phone number:</label>
+                                <input type="tel" class="form-control" id="tel-call-back" placeholder="+380(...)" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-call-back">Email:</label>
+                                <input type="email" class="form-control" id="email-call-back" placeholder="@mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="textarea-call-back">Your message:</label>
+                                <textarea id="textarea-call-back" class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">SEND</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
 			<footer>
 			<div id="map">
-				<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55762681522!2d23.872152863506173!3d49.83260464310914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1576491881859!5m2!1suk!2sua"
-						width="970" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164705.55762681522!2d23.872152863506173!3d49.83260464310914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1576491881859!5m2!1suk!2sua"
+				width="970" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			</div>
 			<address>
 			ASE<br>
@@ -80,7 +115,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<script src="js/index.js"></script>
-		
+	</div>	
 </body>
 
 </html>

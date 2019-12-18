@@ -1,4 +1,4 @@
-document.querySelector('.login-form input[type=submit]')
+document.querySelector('#login-form input[type=submit]')
     .addEventListener('click', login);
 function login(e) {
     e.preventDefault();
@@ -9,10 +9,10 @@ function login(e) {
             // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify({
-            name: document.querySelector('.login-form input[name=name]').value,
-            email: document.querySelector('.login-form input[name=email]').value,
-            message: document.querySelector('.login-form textarea[name=message]').value
+            name: document.querySelector('#login-form input[name=name]').value,
+            email: document.querySelector('#login-form input[name=email]').value,
+            message: document.querySelector('#login-form textarea[name=message]').value
         })
     })
-    .then(_ => document.querySelector('.login-form').reset());
+    .then(_ => document.querySelector('#login-form').reset());
 }

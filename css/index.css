@@ -31,7 +31,14 @@ h2, h3 {
 .contact {
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 700px) {
+    .contact {
+        flex-direction: column;
+    }
 }
 
 #btn-phone-call {
@@ -40,11 +47,19 @@ h2, h3 {
     border-radius: 50%;
 }
 
+#btn-under-form {
+    width: 100%;
+}
+
+.form-ordinery {
+    margin: 0 10px;
+}
+
 .phone-call {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+
 }
 
 #map {
@@ -64,6 +79,7 @@ h2, h3 {
     font-family: "Kaushan Script";
     color: #0844a4;
     margin-top: 5px;
+    font-size: 15px;
     }
 .page {
     background: rgb(82,144,242);

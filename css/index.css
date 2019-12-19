@@ -213,3 +213,32 @@ h2, h3 {
     color: #0844a4;
     text-align: center;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-links {
+    height: 50px;
+    border: 1px solid transparent;
+    margin: 10px;
+}
+
+.img-links:hover {
+     transform: scale(1.5, 1.5);
+    transition: easy;
+}
+
+.address {
+    color: #0844a4;
+    font-size: 15px;
+}
+
+.rights {
+    text-align: center;
+    color: #0844a4;
+    font-size: 12px;
+}

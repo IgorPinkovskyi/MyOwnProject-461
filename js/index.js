@@ -11,6 +11,7 @@ function login(e) {
         body: JSON.stringify({
             name: document.querySelector('#login-form input[name=name]').value,
             email: document.querySelector('#login-form input[name=email]').value,
+            tel: document.querySelector('#login-form input[name=tel]').value,
             message: document.querySelector('#login-form textarea[name=message]').value
         })
     })

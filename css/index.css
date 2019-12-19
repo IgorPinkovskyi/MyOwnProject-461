@@ -13,6 +13,11 @@ body {
   margin: auto;
 }
 
+.navbar-nav {
+    flex: 1;
+    margin-right: 10px;
+}
+
 nav {
 background: rgb(82,144,242);
 background: linear-gradient(45deg, rgba(82,144,242,1) 0%, rgba(217,215,242,1) 0%, rgba(100,164,177,1) 100%);!important;  
@@ -72,14 +77,15 @@ h2, h3 {
     font-family: "Asset";
     font-size: 2rem;
     color: #0844a4;
-    margin-bottom: 1px;
+    padding-top: 15px;
+    margin-bottom: 0;
 }
 
 .under-logo {
     font-family: "Kaushan Script";
     color: #0844a4;
-    margin-top: 5px;
     font-size: 15px;
+    padding-top: 0;
     }
 .page {
     background: rgb(82,144,242);
@@ -89,17 +95,39 @@ h2, h3 {
      background-color: #2196f3;
 }
 
+.active:hover {
+     background-color: #2196f3;
+     border-radius: 3px;
+}
+
 .logo {
-    margin-left: 30px;
+    margin-left: 20px;
     text-align: center;
+    margin-right: 20px;
 }
 ul {
     background-color: #0844a4;
-    align-items: center;
+    box-sizing: border-box;
+}
+
+li {
+    width: 25%;
+    text-align: center;
+}
+
+li:hover {
+    transform: scale(1.2, 1.2);
+    transition: easy 0.4s;
+    background-color: #0844a4;
+    border-radius: 3px;
 }
 
 a {
     color: white!important;
+}
+
+.d-block {
+    margin-top: 0;
 }
 
 article {
@@ -107,6 +135,10 @@ article {
     flex-direction: column;
     margin: auto;
     text-align: center;
+}
+
+.text-content {
+    margin: 15px;
 }
 
 .solar, .wind {

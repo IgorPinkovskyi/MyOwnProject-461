@@ -4,10 +4,6 @@
   --main-color: black;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
   max-width: 980px;
   margin: auto;
@@ -44,6 +40,40 @@ h2, h3 {
     .contact {
         flex-direction: column;
     }
+}
+
+@media (max-width: 700px) {
+    .solar, .wind {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .products {
+        flex-direction: column;
+    }
+}
+
+.products {
+    display: flex;
+}
+
+img {
+    border: 1px solid #0844a4;
+}
+
+.card-body {
+    background-color:#2196f3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-img-top {
+    margin-top: 0;
+}
+
+.card {
+    margin: 25px;
 }
 
 #btn-phone-call {
@@ -117,9 +147,14 @@ li {
 
 li:hover {
     transform: scale(1.2, 1.2);
-    transition: easy 0.4s;
+    transition: easy;
     background-color: #0844a4;
     border-radius: 3px;
+}
+
+.btn {
+    width: 100%;
+
 }
 
 a {
@@ -141,8 +176,17 @@ article {
     margin: 15px;
 }
 
-.solar, .wind {
+
+.solar {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .solar-content, .wind-content {
@@ -153,6 +197,15 @@ article {
 img {
     margin-top: 10px;
 }
+
+hr {
+    border: none; 
+    color: #2196f3;
+    background-color: blue;
+    height: 2px;
+    margin: 25px;
+
+   }
 
 h2, h3 {
     font-family: "Kaushan Script";

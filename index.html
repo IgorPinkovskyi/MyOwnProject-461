@@ -85,8 +85,11 @@
 					Here in you will learn more about alternative energy sources that you can take into consideration.
 				</p>
 			</article>
+            <hr>
 			<section class="solar">
-				<img src="img/clouds-sky-solar-panels.jpg" alt="clouds sky solar panels">
+                <div class="solar-img">
+				    <img src="img/clouds-sky-solar-panels.jpg" alt="clouds sky solar panels">
+                </div>
 				<div class="solar-content">
 					<h2>Solar Energy</h2>
 					<p class="text-content"> Solar is the first energy source in the world. It was in use much earlier
@@ -104,7 +107,11 @@
 					</p>
 				</div>
 			</section>
+            <hr>
 			<section class="wind">
+                <div class="wind-img">
+				    <img src="img/green-field-wind-turbines.jpg" alt="green field wind turbines">
+                </div>
 				<div class="wind-content">
 					<h2>Wind Energy</h2>
 					<p class="text-content">This is one of the energy sources that have been in use for a very long time
@@ -126,16 +133,19 @@
 						source.
 					</p>
 				</div>
-				<img src="img/green-field-wind-turbines.jpg" alt="green field wind turbines">
+
 		</section>
+        <hr>
+
 				<h2>Our product</h2>
+                <div class="products">
                 <div class="card" style="width: 30rem;">
                     <img src="img/product-solar-system.jpg" class="card-img-top" alt="Our product solar panels system capacity 10kWt">
                     <div class="card-body">
                         <h5 class="card-title">Solar panel system</h5>
                         <p class="card-text">Capacity: 10 kWt</p>
-                        <p class="card-text">Price: 10 000$t</p>
-                        <a href="#" class="btn btn-primary ">BUY NOW</a>
+                        <p class="card-text">Price: 10 000$</p>
+                        <a href="contact.html" class="btn btn-primary ">BUY NOW</a>
                     </div>
                 </div>
                 <div class="card" style="width: 30rem;">
@@ -144,15 +154,16 @@
                         <h5 class="card-title">Low wind generator</h5>
                         <p class="card-text">Capacity: 1 kWt</p>
                         <p class="card-text">Price: 1 000$</p>
-                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                        <a href="contact.html" class="btn btn-primary">BUY NOW</a>
                     </div>
                 </div>
-		</section>
+                </div>
+        <hr>
 			<h3 class="animated infinite pulse delay-2s">Choose Alternative Save a Planet</h3>
 			<h2>Contact Us</h2>
 		<div class="contact">
             <div class="form-ordinery">
-			<form role="form" id="login-form">
+			<form role="form" class="forminfo" id="login-form">
                 <div class="form-group">
 				    <label>Name:
                         <input type="text" name="name" class="form-control" placeholder="Name" required>
@@ -164,12 +175,17 @@
                      </label>
 				</div>
                 <div class="form-group">
+				    <label>Phone number:
+                        <input type="tel" name="tel" class="form-control" placeholder="+380(...)" required>
+                     </label>
+				</div>
+                <div class="form-group">
 				    <label>Message:
                         <textarea name="message" class="form-control" placeholder="Your message"></textarea>
                     </label>
 				</div>
                 <div class="form-group">
-				<button type="submit" class="btn btn-primary btn-lg" id="btn-under-form">SEND</button>
+				<button type="submit" class="btn btn-primary" id="btn-under-form">SEND</button>
                 </div>
             </form>
             </div>
@@ -200,7 +216,7 @@
                                 <label for="textarea-call-back">Your message:</label>
                                 <textarea id="textarea-call-back" class="form-control" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-success">SEND</button>
+                            <button type="submit" class="btn btn-primary">SEND</button>
                         </form>
                     </div>
                     <div class="modal-footer">

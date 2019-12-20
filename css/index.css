@@ -36,19 +36,19 @@ h2, h3 {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .contact {
         flex-direction: column;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .solar, .wind {
         flex-direction: column;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .products {
         flex-direction: column;
     }
@@ -90,7 +90,7 @@ img {
     margin: 0 10px;
 }
 
-.phone-call {
+#phone-call {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,7 @@ img {
 #map {
     display: flex;
     justify-content: center;
-    border: 5px solid #0844a4;   
+    border: 2px solid #0844a4;   
 }
 
 .header-logo {
@@ -241,4 +241,5 @@ h2, h3 {
     text-align: center;
     color: #0844a4;
     font-size: 12px;
+    padding: 10px;
 }
